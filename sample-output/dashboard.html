@@ -1,0 +1,170 @@
+<html>
+<head>
+<style>
+body { margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; font-family: 'Arial', Gadget, sans-serif; font-size: 80%; }
+.grad { background: rgb( 113, 153, 190 ); background: -webkit-gradient( linear, left top, left bottom, from( rgb( 156, 187, 220 ) ), to( rgb( 30, 40, 59 ) ) ) fixed; }
+#left { margin: 0px; padding: 0px; position: absolute; top: 20px; left: 0px; right: 170px; bottom: 20px; overflow-y: auto;}
+#right { margin: 0px; padding: 0px; position: absolute; top: 20px; right: 20px; font-size: 90%; }
+.hi { color: blue; border-right: 3px solid blue; }
+.question { color: green; border-right: 3px solid green; }
+.problem { color: red; border-right: 3px solid red; }
+.comment_div { margin: 20px; padding: 10px; border-radius: 8px; background: rgb( 242, 243, 238 ); color: rgb( 30, 40, 59 ); }
+.class_name { float: right; border: none; margin: 0px 0px 5px 5px; padding: 0px; font-style: italic; }
+p { margin: 10px 0px 0px 0px }
+ul { margin: 0px; padding: 0px 10px 0px 0px; list-style: none; }
+li { margin: 10px 8px 0px 0px; padding: 3px 5px 3px 5px; display: inline-block; color: white; }
+.action { background: rgb( 11, 92, 44 ); }
+.obj { background:  rgb( 58, 36, 75 ); }
+.tech { background:  rgb( 39, 64, 124 ); }
+.persona { background:  rgb( 171, 106, 222 ); }
+.unknown { background: grey; }
+.docs { background: #AB987A; }
+</style>
+<script>
+function showHide( class_name, display )
+{
+    var comments = document.getElementsByClassName( class_name );
+    for( var i = 0; i < comments.length; i++ )
+    {
+        comments[i].style.display = display;
+    }
+}
+</script>
+</head>
+<body class='grad'>
+<div id='left'>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hi  Anyone there?</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello! please can you help</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Greetings :)</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello I need help</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hi Im testing dsx</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hey there</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Good morning</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>excuse me</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hi there</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Good evening</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hello testing</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hey mate hope your well.</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hi can you help</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>good morning</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hi can you helpme</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hello yes</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hello</p><ul class='entities'></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi cant login today with this err The owners accout is not active. This might be caused by expired membership.</p><ul class='entities'><li class='action'>login</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I am not able to register my account need your help</p><ul class='entities'><li class='action'>register</li><li class='obj'>account</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I got the message failed to prepare Object-Storage. Would you please give me a suggestion. Thank you.</p><ul class='entities'><li class='action'>prepare</li><li class='tech'>object-storage.</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I am trying to request a new API access key but I dont know what the ID should be for me</p><ul class='entities'><li class='action'>request</li><li class='obj'>access key</li><li class='tech'>api</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>When I try to add a model to any project I get an Unauthorized error.</p><ul class='entities'><li class='action'>add</li><li class='obj'>model</li><li class='obj'>project</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>When I insert connection to a file in R I get errors trying to run it</p><ul class='entities'><li class='action'>connection</li><li class='obj'>file</li><li class='tech'>r</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi im having some troubles with a shiny app</p><ul class='entities'><li class='tech'>shiny</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I have some problems initiate my notebook in my project</p><ul class='entities'><li class='action'>initiate</li><li class='obj'>notebook</li><li class='obj'>project</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I got errors  from SPSS modelerabout connecting to the server how I can solve this issue</p><ul class='entities'><li class='action'>connecting</li><li class='tech'>spss</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi Im having trouble calling the endpoint of my deployed model</p><ul class='entities'><li class='obj'>endpoint</li><li class='obj'>model</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Uploading data from object storage to rstudio returns an error</p><ul class='entities'><li class='action'>uploading</li><li class='tech'>object storage</li><li class='tech'>rstudio</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I was trying to deploy a model from a notebook. When I run this line it gave me an erro: Invalid token format. Could u help me? Thanks.</p><ul class='entities'><li class='action'>deploy</li><li class='obj'>model</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Having issues setup WML service</p><ul class='entities'><li class='action'>setup</li><li class='tech'>wml</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Im following the example it says that I can upload to spark but when I try it says unable to create a new link what am I doing wrong?</p><ul class='entities'><li class='action'>create</li><li class='action'>upload</li><li class='docs'>example</li><li class='tech'>spark</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I deployed my WatsonML model and have a Scoring End Point that Id like to use from an external app. I keep getting Authentication Failed when I try to invoke it.</p><ul class='entities'><li class='obj'>model</li><li class='obj'>scoring end point</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I am trying to Import Github Code To Create NoteBook via Github link but the file format is not accepting</p><ul class='entities'><li class='action'>create</li><li class='action'>import</li><li class='obj'>file</li><li class='obj'>notebook</li><li class='tech'>github</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>jupyter notebook is unable to connect to kernel</p><ul class='entities'><li class='action'>connect</li><li class='obj'>notebook</li><li class='tech'>jupyter</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>hello - Im trying to edit a notebook and the circie just keeps spinning. any idea to get around this?</p><ul class='entities'><li class='action'>edit</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hello im doing this tutorial Predict the best drug for heart treatment with IBM Watson Machine Learning (SPSS) and Im having some trouble to reproduce the example</p><ul class='entities'><li class='docs'>example</li><li class='docs'>tutorial</li><li class='tech'>ibm watson machine learning (spss)</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>hello message keeps coming which says my services have exceeded limit</p><ul class='entities'><li class='action'>exceeded</li><li class='obj'>limit</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hello I can connect to clodant from pyspark</p><ul class='entities'><li class='action'>connect</li><li class='tech'>clodant</li><li class='tech'>pyspark</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I need help establishing connection with my cloudant account. I get an error saying Failed to find data source</p><ul class='entities'><li class='action'>connection</li><li class='obj'>account</li><li class='tech'>cloudant</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi i need some help when model training they are giving me error on training</p><ul class='entities'><li class='action'>training</li><li class='obj'>model</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I would like to signup for a trail but I am getting an error</p><ul class='entities'><li class='action'>signup</li><li class='obj'>trail</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi My problem is an error when I want to create a new notebook</p><ul class='entities'><li class='action'>create</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi not able to signup</p><ul class='entities'><li class='action'>signup</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I keep getting a Failed creating account error</p><ul class='entities'><li class='action'>creating</li><li class='obj'>account</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi trying to create a note book it is giving error</p><ul class='entities'><li class='action'>create</li><li class='obj'>note book</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Im trying to create a python notebook and keep getting an error</p><ul class='entities'><li class='action'>create</li><li class='obj'>notebook</li><li class='tech'>python</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi when I tried to create a project am getting below error can you pls guide here</p><ul class='entities'><li class='action'>create</li><li class='obj'>project</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I cant see my  spark instance when i go to create a new project</p><ul class='entities'><li class='action'>create</li><li class='obj'>project</li><li class='tech'>spark</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi fine I was having difficulty uploading data but its working now</p><ul class='entities'><li class='action'>uploading</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I get error like Exceeded Services Limit</p><ul class='entities'><li class='action'>exceeded</li><li class='obj'>limit</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi l couldnt able to create a new project</p><ul class='entities'><li class='action'>create</li><li class='obj'>project</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hello I keep getting error when trying to create account. Can you help me with that?</p><ul class='entities'><li class='action'>create</li><li class='obj'>account</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>hello I cannot create a Notebook</p><ul class='entities'><li class='action'>create</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hello I am having trouble logging in</p><ul class='entities'><li class='action'>logging in</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi there Im having trouble using my CSV data for my machine learning model</p><ul class='entities'><li class='obj'>model</li><li class='tech'>machine learning</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>hi my trial has expired can you help?</p><ul class='entities'><li class='obj'>trial</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Is there any free plan for students?</p><ul class='entities'><li class='obj'>free plan</li><li class='persona'>students</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>How do I add collaborators to my project please?</p><ul class='entities'><li class='action'>add</li><li class='obj'>collaborators</li><li class='obj'>project</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hello Im trying to upload one 1.5GB tar.gz file and unzip to Object Storage. Could you tell me how to do it?</p><ul class='entities'><li class='action'>upload</li><li class='obj'>file</li><li class='tech'>object storage</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>What library do I use to run Sparks Machine Learning library on R in?</p><ul class='entities'><li class='tech'>machine learning</li><li class='tech'>r</li><li class='tech'>sparks</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi I wanted to know how to export data from python notebooks?</p><ul class='entities'><li class='action'>export</li><li class='obj'>notebooks</li><li class='tech'>python</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi how can I import a flow from spss modeler in data science experience?</p><ul class='entities'><li class='action'>import</li><li class='obj'>flow</li><li class='tech'>spss modeler</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>hi is there link on how to deploy a data analytic model using node-red?</p><ul class='entities'><li class='action'>deploy</li><li class='docs'>link on</li><li class='obj'>model</li><li class='tech'>node-red</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>How to start creating R notebook?</p><ul class='entities'><li class='action'>creating</li><li class='obj'>notebook</li><li class='tech'>r</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>hai how can i do analyze with csv file is there any tutorial on it</p><ul class='entities'><li class='action'>analyze</li><li class='docs'>tutorial</li><li class='obj'>file</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi team how can i import data into a project?</p><ul class='entities'><li class='action'>import</li><li class='obj'>project</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>i am Student can i have free access</p><ul class='entities'><li class='obj'>free access</li><li class='persona'>student</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>hello how can i download a csv file from my notebook?</p><ul class='entities'><li class='action'>download</li><li class='obj'>file</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi I want to know hoe to use APIs</p><ul class='entities'><li class='tech'>apis</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>hi i need help writing my dataframe to dashdb</p><ul class='entities'><li class='action'>writing</li><li class='obj'>dataframe</li><li class='tech'>dashdb</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>how to export to csv in notebook?</p><ul class='entities'><li class='action'>export</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Is It possible to insert an external source to create Notebook?</p><ul class='entities'><li class='action'>create</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hello... i created a Cloudent NoSQL DB and loaded csv in it now how to access the data</p><ul class='entities'><li class='action'>access</li><li class='tech'>cloudent nosql db</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi there how can I upload a series of .zip files then unzip them?</p><ul class='entities'><li class='action'>upload</li><li class='obj'>files</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>hello how to start creating R notebook?</p><ul class='entities'><li class='action'>creating</li><li class='obj'>notebook</li><li class='tech'>r</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi how do you add a folder of files to a project?</p><ul class='entities'><li class='action'>add</li><li class='obj'>files</li><li class='obj'>project</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi there can i recover a deleted notebook?</p><ul class='entities'><li class='action'>recover</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi team How can you change the name of a Notebook?</p><ul class='entities'><li class='action'>change</li><li class='obj'>name</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>How to upload a dataset from local to RStudio</p><ul class='entities'><li class='action'>upload</li><li class='obj'>dataset</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Good morning can you help me upload a shapefile?</p><ul class='entities'><li class='action'>upload</li><li class='obj'>shapefile</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hello How can I use deployed models built with R studio in WML?</p><ul class='entities'><li class='obj'>models</li><li class='tech'>r studio</li><li class='tech'>wml</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>how do i save my data as a csv file</p><ul class='entities'><li class='action'>save</li><li class='obj'>file</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi is any way to download my files in data assets back to my loacal machine?</p><ul class='entities'><li class='action'>download</li><li class='obj'>files</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi I created a csv in my notebook but how do I download it to my laptop?</p><ul class='entities'><li class='action'>download</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>How do I start using Watson Machine Learning</p><ul class='entities'><li class='tech'>watson machine learning</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Good night where to place my file to import it into notebook?</p><ul class='entities'><li class='action'>import</li><li class='obj'>file</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>how can i extend my trial period</p><ul class='entities'><li class='obj'>trial</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>How to acess the data in jupyter notebook using pandas?</p><ul class='entities'><li class='action'>acess</li><li class='obj'>notebook</li><li class='tech'>jupyter</li><li class='tech'>pandas</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi I want to know how to make connection to database</p><ul class='entities'><li class='action'>connection</li><li class='obj'>database</li></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello I need help</p><ul class='entities'></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Good to see you</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>HI is anyone there?</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hello</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>I need help pleas</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Ok</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Dear sir</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>Hello</p><ul class='entities'></ul></div>
+<div class='comment_div hi'><div class='class_name hi'>hi</div><p>hi</p><ul class='entities'></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi I am getting error in selecting org org owner not active</p><ul class='entities'><li class='action'>selecting</li><li class='obj'>org</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I get a Not authorized error when trying to create a free machine learning service instance</p><ul class='entities'><li class='action'>create</li><li class='tech'>machine learning</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hi Im running a coding in R and I get this error Error object x not found</p><ul class='entities'><li class='tech'>r</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Hello where can I report an error while training models in Watson Machine Learning</p><ul class='entities'><li class='action'>training</li><li class='obj'>models</li><li class='tech'>watson machine learning</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>Im having trouble loading in my data for some reason wont let me upload files</p><ul class='entities'><li class='action'>loading</li><li class='action'>upload</li><li class='obj'>files</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>So this happens when I try to sign up.</p><ul class='entities'><li class='action'>sign up</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>I cant see the imported CSV files</p><ul class='entities'><li class='action'>imported</li><li class='obj'>files</li></ul></div>
+<div class='comment_div problem'><div class='class_name problem'>problem</div><p>I am stuck creating an account</p><ul class='entities'><li class='action'>creating</li><li class='obj'>account</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>good day, how can I add multiple files to a project at once?</p><ul class='entities'><li class='action'>add</li><li class='obj'>files</li><li class='obj'>project</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Can you recover a notebook?</p><ul class='entities'><li class='action'>recover</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi How can I rename of a Notebook?</p><ul class='entities'><li class='action'>rename</li><li class='obj'>notebook</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>How can I upload a dataset to r studio</p><ul class='entities'><li class='action'>upload</li><li class='obj'>dataset</li><li class='tech'>r studio</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>Hi can you tell me how to load a shape file?</p><ul class='entities'><li class='action'>load</li><li class='obj'>shape file</li></ul></div>
+<div class='comment_div question'><div class='class_name question'>question</div><p>How can I use already-deployed models with WML?</p><ul class='entities'><li class='obj'>models</li><li class='tech'>wml</li></ul></div>
+</div>
+<table id='right'>
+<tr><th>Show&nbsp;&nbsp;</th><th>Hide</th></tr>
+<tr><td><input type='radio' id='show_hi'       name='show_hide_hi'       onchange='showHide( "hi",       "block" );' checked></td><td><input type='radio' name='show_hide_hi'       onchange='showHide( "hi",       "none" );'><td>Hi</td></tr>
+<tr><td><input type='radio' id='show_question' name='show_hide_question' onchange='showHide( "question", "block" );' checked></td><td><input type='radio' name='show_hide_question' onchange='showHide( "question", "none" );'><td>Questions</td></tr>
+<tr><td><input type='radio' id='show_problem'  name='show_hide_problem'  onchange='showHide( "problem",  "block" );' checked></td><td><input type='radio' name='show_hide_problem'  onchange='showHide( "problem",  "none" );'><td>Problems</td></tr>
+<tr><td><input type='radio' id='show_entities' name='show_hide_entities' onchange='showHide( "entities", "block" );' checked></td><td><input type='radio' name='show_hide_entities' onchange='showHide( "entities", "none" );'><td>Entities</td></tr>
+</table>
+</body>
+</html>

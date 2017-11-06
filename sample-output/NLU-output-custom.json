@@ -1,0 +1,227 @@
+[
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "Hello I need help",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "Good to see you",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "HI is anyone there?",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "hello",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "I need help pleas",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "Ok",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "Dear sir",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "Hello",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "Hello",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "entities": {}
+   },
+   {
+      "text": "Hi I am getting error in selecting org org owner not active",
+      "expected_class": "problem",
+      "entities": {
+         "action": [
+            "selecting"
+         ],
+         "obj": [
+            "org"
+         ]
+      }
+   },
+   {
+      "text": "I get a Not authorized error when trying to create a free machine learning service instance",
+      "expected_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "Hi Im running a coding in R and I get this error Error object x not found",
+      "expected_class": "problem",
+      "entities": {
+         "tech": [
+            "r"
+         ]
+      }
+   },
+   {
+      "text": "Hello where can I report an error while training models in Watson Machine Learning",
+      "expected_class": "problem",
+      "entities": {
+         "action": [
+            "training"
+         ],
+         "obj": [
+            "models"
+         ],
+         "tech": [
+            "watson machine learning"
+         ]
+      }
+   },
+   {
+      "text": "Im having trouble loading in my data for some reason wont let me upload files",
+      "expected_class": "problem",
+      "entities": {
+         "action": [
+            "loading",
+            "upload"
+         ],
+         "obj": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "So this happens when I try to sign up.",
+      "expected_class": "problem",
+      "entities": {
+         "action": [
+            "sign up"
+         ]
+      }
+   },
+   {
+      "text": "I cant see the imported CSV files",
+      "expected_class": "problem",
+      "entities": {
+         "action": [
+            "imported"
+         ],
+         "obj": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "I am stuck creating an account",
+      "expected_class": "problem",
+      "entities": {
+         "action": [
+            "creating"
+         ],
+         "obj": [
+            "account"
+         ]
+      }
+   },
+   {
+      "text": "good day, how can I add multiple files to a project at once?",
+      "expected_class": "question",
+      "entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "files",
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "Can you recover a notebook?",
+      "expected_class": "question",
+      "entities": {
+         "action": [
+            "recover"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi How can I rename of a Notebook?",
+      "expected_class": "question",
+      "entities": {
+         "action": [
+            "rename"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "How can I upload a dataset to r studio",
+      "expected_class": "question",
+      "entities": {
+         "action": [
+            "upload"
+         ],
+         "obj": [
+            "dataset"
+         ],
+         "tech": [
+            "r studio"
+         ]
+      }
+   },
+   {
+      "text": "Hi can you tell me how to load a shape file?",
+      "expected_class": "question",
+      "entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [
+            "shape file"
+         ]
+      }
+   },
+   {
+      "text": "How can I use already-deployed models with WML?",
+      "expected_class": "question",
+      "entities": {
+         "obj": [
+            "models"
+         ],
+         "tech": [
+            "wml"
+         ]
+      }
+   }
+]
