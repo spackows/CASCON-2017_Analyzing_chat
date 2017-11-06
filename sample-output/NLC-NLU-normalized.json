@@ -1,0 +1,2178 @@
+[
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi  Anyone there?",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello! please can you help",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Greetings :)",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello I need help",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi Im testing dsx",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hey there",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Good morning",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "excuse me",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi there",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Good evening",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hello testing",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hey mate hope your well.",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi can you help",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "good morning",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi can you helpme",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hello yes",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hello",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi cant login today with this err The owners accout is not active. This might be caused by expired membership.",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "login"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "log in"
+         ]
+      }
+   },
+   {
+      "text": "I am not able to register my account need your help",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "register"
+         ],
+         "obj": [
+            "account"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "sign up"
+         ],
+         "obj": [
+            "account"
+         ]
+      }
+   },
+   {
+      "text": "Hi I got the message failed to prepare Object-Storage. Would you please give me a suggestion. Thank you.",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "prepare"
+         ],
+         "tech": [
+            "object-storage."
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "prepare"
+         ],
+         "tech": [
+            "object storage"
+         ]
+      }
+   },
+   {
+      "text": "Hi I am trying to request a new API access key but I dont know what the ID should be for me",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "request"
+         ],
+         "tech": [
+            "api"
+         ],
+         "obj": [
+            "access key"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "request"
+         ],
+         "tech": [
+            "api"
+         ],
+         "obj": [
+            "access key"
+         ]
+      }
+   },
+   {
+      "text": "When I try to add a model to any project I get an Unauthorized error.",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "model",
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "model",
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "When I insert connection to a file in R I get errors trying to run it",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "connection"
+         ],
+         "obj": [
+            "file"
+         ],
+         "tech": [
+            "r"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "connect"
+         ],
+         "obj": [],
+         "unknown": [
+            "file"
+         ],
+         "tech": [
+            "r"
+         ]
+      }
+   },
+   {
+      "text": "Hi im having some troubles with a shiny app",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "tech": [
+            "shiny"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "shiny"
+         ]
+      }
+   },
+   {
+      "text": "Hi I have some problems initiate my notebook in my project",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "initiate"
+         ],
+         "obj": [
+            "notebook",
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "initiate"
+         ],
+         "obj": [
+            "notebook",
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "I got errors  from SPSS modelerabout connecting to the server how I can solve this issue",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "tech": [
+            "spss"
+         ],
+         "action": [
+            "connecting"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "machine learning"
+         ],
+         "action": [
+            "connect"
+         ]
+      }
+   },
+   {
+      "text": "Hi Im having trouble calling the endpoint of my deployed model",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "obj": [
+            "endpoint",
+            "model"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "endpoint",
+            "model"
+         ]
+      }
+   },
+   {
+      "text": "Uploading data from object storage to rstudio returns an error",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "uploading"
+         ],
+         "tech": [
+            "object storage",
+            "rstudio"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "tech": [
+            "object storage",
+            "r"
+         ]
+      }
+   },
+   {
+      "text": "Hi I was trying to deploy a model from a notebook. When I run this line it gave me an erro: Invalid token format. Could u help me? Thanks.",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "deploy"
+         ],
+         "obj": [
+            "model",
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "deploy"
+         ],
+         "obj": [
+            "model",
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Having issues setup WML service",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "setup"
+         ],
+         "tech": [
+            "wml"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "set up"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "Im following the example it says that I can upload to spark but when I try it says unable to create a new link what am I doing wrong?",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "docs": [
+            "example"
+         ],
+         "action": [
+            "upload",
+            "create"
+         ],
+         "tech": [
+            "spark"
+         ]
+      },
+      "normalized_entities": {
+         "docs": [
+            "example"
+         ],
+         "action": [
+            "load",
+            "create"
+         ],
+         "tech": [
+            "spark"
+         ]
+      }
+   },
+   {
+      "text": "I deployed my WatsonML model and have a Scoring End Point that Id like to use from an external app. I keep getting Authentication Failed when I try to invoke it.",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "obj": [
+            "model",
+            "scoring end point"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "model",
+            "endpoint"
+         ]
+      }
+   },
+   {
+      "text": "Hi I am trying to Import Github Code To Create NoteBook via Github link but the file format is not accepting",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "import",
+            "create"
+         ],
+         "tech": [
+            "github"
+         ],
+         "obj": [
+            "notebook",
+            "file"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "import",
+            "create"
+         ],
+         "tech": [
+            "github"
+         ],
+         "obj": [
+            "notebook"
+         ],
+         "unknown": [
+            "file"
+         ]
+      }
+   },
+   {
+      "text": "jupyter notebook is unable to connect to kernel",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "tech": [
+            "jupyter"
+         ],
+         "obj": [
+            "notebook"
+         ],
+         "action": [
+            "connect"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "jupyter"
+         ],
+         "obj": [
+            "notebook"
+         ],
+         "action": [
+            "connect"
+         ]
+      }
+   },
+   {
+      "text": "hello - Im trying to edit a notebook and the circie just keeps spinning. any idea to get around this?",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "edit"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "edit"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hello im doing this tutorial Predict the best drug for heart treatment with IBM Watson Machine Learning (SPSS) and Im having some trouble to reproduce the example",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "docs": [
+            "tutorial",
+            "example"
+         ],
+         "tech": [
+            "ibm watson machine learning (spss)"
+         ]
+      },
+      "normalized_entities": {
+         "docs": [
+            "tutorial",
+            "example"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "hello message keeps coming which says my services have exceeded limit",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "exceeded"
+         ],
+         "obj": [
+            "limit"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "exceed"
+         ],
+         "obj": [
+            "limit"
+         ]
+      }
+   },
+   {
+      "text": "Hello I can connect to clodant from pyspark",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "connect"
+         ],
+         "tech": [
+            "clodant",
+            "pyspark"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "connect"
+         ],
+         "tech": [
+            "cloudant",
+            "spark"
+         ]
+      }
+   },
+   {
+      "text": "Hi I need help establishing connection with my cloudant account. I get an error saying Failed to find data source",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "connection"
+         ],
+         "tech": [
+            "cloudant"
+         ],
+         "obj": [
+            "account"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "connect"
+         ],
+         "tech": [
+            "cloudant"
+         ],
+         "obj": [
+            "account"
+         ]
+      }
+   },
+   {
+      "text": "Hi i need some help when model training they are giving me error on training",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "obj": [
+            "model"
+         ],
+         "action": [
+            "training"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "model"
+         ],
+         "action": [
+            "train"
+         ]
+      }
+   },
+   {
+      "text": "Hi I would like to signup for a trail but I am getting an error",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "signup"
+         ],
+         "obj": [
+            "trail"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "sign up"
+         ],
+         "obj": [
+            "trial"
+         ]
+      }
+   },
+   {
+      "text": "Hi My problem is an error when I want to create a new notebook",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi not able to signup",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "signup"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "sign up"
+         ]
+      }
+   },
+   {
+      "text": "I keep getting a Failed creating account error",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "creating"
+         ],
+         "obj": [
+            "account"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "account"
+         ]
+      }
+   },
+   {
+      "text": "Hi trying to create a note book it is giving error",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "note book"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Im trying to create a python notebook and keep getting an error",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "tech": [
+            "python"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "tech": [
+            "python"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi when I tried to create a project am getting below error can you pls guide here",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "I cant see my  spark instance when i go to create a new project",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "tech": [
+            "spark"
+         ],
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "spark"
+         ],
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "Hi fine I was having difficulty uploading data but its working now",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "uploading"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ]
+      }
+   },
+   {
+      "text": "I get error like Exceeded Services Limit",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "exceeded"
+         ],
+         "obj": [
+            "limit"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "exceed"
+         ],
+         "obj": [
+            "limit"
+         ]
+      }
+   },
+   {
+      "text": "Hi l couldnt able to create a new project",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "Hello I keep getting error when trying to create account. Can you help me with that?",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "account"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "account"
+         ]
+      }
+   },
+   {
+      "text": "hello I cannot create a Notebook",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hello I am having trouble logging in",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "logging in"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "log in"
+         ]
+      }
+   },
+   {
+      "text": "Hi there Im having trouble using my CSV data for my machine learning model",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "tech": [
+            "machine learning"
+         ],
+         "obj": [
+            "model"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "machine learning"
+         ],
+         "obj": [
+            "model"
+         ]
+      }
+   },
+   {
+      "text": "hi my trial has expired can you help?",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "obj": [
+            "trial"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "trial"
+         ]
+      }
+   },
+   {
+      "text": "Is there any free plan for students?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "obj": [
+            "free plan"
+         ],
+         "persona": [
+            "students"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "trial"
+         ],
+         "persona": [
+            "student"
+         ]
+      }
+   },
+   {
+      "text": "How do I add collaborators to my project please?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "collaborators",
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "collaborator",
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "Hello Im trying to upload one 1.5GB tar.gz file and unzip to Object Storage. Could you tell me how to do it?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "upload"
+         ],
+         "obj": [
+            "file"
+         ],
+         "tech": [
+            "object storage"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [],
+         "unknown": [
+            "file"
+         ],
+         "tech": [
+            "object storage"
+         ]
+      }
+   },
+   {
+      "text": "What library do I use to run Sparks Machine Learning library on R in?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "tech": [
+            "sparks",
+            "machine learning",
+            "r"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "spark",
+            "machine learning",
+            "r"
+         ]
+      }
+   },
+   {
+      "text": "Hi I wanted to know how to export data from python notebooks?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "export"
+         ],
+         "tech": [
+            "python"
+         ],
+         "obj": [
+            "notebooks"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "export"
+         ],
+         "tech": [
+            "python"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi how can I import a flow from spss modeler in data science experience?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "import"
+         ],
+         "obj": [
+            "flow"
+         ],
+         "tech": [
+            "spss modeler"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "import"
+         ],
+         "obj": [
+            "flow"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "hi is there link on how to deploy a data analytic model using node-red?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "docs": [
+            "link on"
+         ],
+         "action": [
+            "deploy"
+         ],
+         "obj": [
+            "model"
+         ],
+         "tech": [
+            "node-red"
+         ]
+      },
+      "normalized_entities": {
+         "docs": [
+            "link on"
+         ],
+         "action": [
+            "deploy"
+         ],
+         "obj": [
+            "model"
+         ],
+         "tech": [
+            "node-red"
+         ]
+      }
+   },
+   {
+      "text": "How to start creating R notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "creating"
+         ],
+         "tech": [
+            "r"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "tech": [
+            "r"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "hai how can i do analyze with csv file is there any tutorial on it",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "analyze"
+         ],
+         "obj": [
+            "file"
+         ],
+         "docs": [
+            "tutorial"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "analyze"
+         ],
+         "obj": [],
+         "unknown": [
+            "file"
+         ],
+         "docs": [
+            "tutorial"
+         ]
+      }
+   },
+   {
+      "text": "Hi team how can i import data into a project?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "import"
+         ],
+         "obj": [
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "import"
+         ],
+         "obj": [
+            "project"
+         ]
+      }
+   },
+   {
+      "text": "i am Student can i have free access",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "persona": [
+            "student"
+         ],
+         "obj": [
+            "free access"
+         ]
+      },
+      "normalized_entities": {
+         "persona": [
+            "student"
+         ],
+         "obj": [
+            "trial"
+         ]
+      }
+   },
+   {
+      "text": "hello how can i download a csv file from my notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "download"
+         ],
+         "obj": [
+            "file",
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "download"
+         ],
+         "obj": [
+            "notebook"
+         ],
+         "unknown": [
+            "file"
+         ]
+      }
+   },
+   {
+      "text": "Hi I want to know hoe to use APIs",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "tech": [
+            "apis"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "api"
+         ]
+      }
+   },
+   {
+      "text": "hi i need help writing my dataframe to dashdb",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "writing"
+         ],
+         "obj": [
+            "dataframe"
+         ],
+         "tech": [
+            "dashdb"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "write"
+         ],
+         "obj": [
+            "dataframe"
+         ],
+         "tech": [
+            "Db2"
+         ]
+      }
+   },
+   {
+      "text": "how to export to csv in notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "export"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "export"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Is It possible to insert an external source to create Notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hello... i created a Cloudent NoSQL DB and loaded csv in it now how to access the data",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "tech": [
+            "cloudent nosql db"
+         ],
+         "action": [
+            "access"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "cloudant"
+         ],
+         "action": [
+            "access"
+         ]
+      }
+   },
+   {
+      "text": "Hi there how can I upload a series of .zip files then unzip them?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "upload"
+         ],
+         "obj": [
+            "files"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [],
+         "unknown": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "hello how to start creating R notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "creating"
+         ],
+         "tech": [
+            "r"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "tech": [
+            "r"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi how do you add a folder of files to a project?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "files",
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "project"
+         ],
+         "unknown": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "Hi there can i recover a deleted notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "recover"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "recover"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi team How can you change the name of a Notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "change"
+         ],
+         "obj": [
+            "name",
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "change"
+         ],
+         "obj": [
+            "name",
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "How to upload a dataset from local to RStudio",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "upload"
+         ],
+         "obj": [
+            "dataset"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [
+            "dataset"
+         ]
+      }
+   },
+   {
+      "text": "Good morning can you help me upload a shapefile?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "upload"
+         ],
+         "obj": [
+            "shapefile"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [
+            "shapefile"
+         ]
+      }
+   },
+   {
+      "text": "Hello How can I use deployed models built with R studio in WML?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "obj": [
+            "models"
+         ],
+         "tech": [
+            "r studio",
+            "wml"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "model"
+         ],
+         "tech": [
+            "r",
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "how do i save my data as a csv file",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "save"
+         ],
+         "obj": [
+            "file"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "save"
+         ],
+         "obj": [],
+         "unknown": [
+            "file"
+         ]
+      }
+   },
+   {
+      "text": "Hi is any way to download my files in data assets back to my loacal machine?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "download"
+         ],
+         "obj": [
+            "files"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "download"
+         ],
+         "obj": [],
+         "unknown": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "Hi I created a csv in my notebook but how do I download it to my laptop?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "obj": [
+            "notebook"
+         ],
+         "action": [
+            "download"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "notebook"
+         ],
+         "action": [
+            "download"
+         ]
+      }
+   },
+   {
+      "text": "How do I start using Watson Machine Learning",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "tech": [
+            "watson machine learning"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "Good night where to place my file to import it into notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "obj": [
+            "file",
+            "notebook"
+         ],
+         "action": [
+            "import"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "notebook"
+         ],
+         "unknown": [
+            "file"
+         ],
+         "action": [
+            "import"
+         ]
+      }
+   },
+   {
+      "text": "how can i extend my trial period",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "obj": [
+            "trial"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "trial"
+         ]
+      }
+   },
+   {
+      "text": "How to acess the data in jupyter notebook using pandas?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "acess"
+         ],
+         "tech": [
+            "jupyter",
+            "pandas"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "access"
+         ],
+         "tech": [
+            "jupyter",
+            "pandas"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi I want to know how to make connection to database",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "connection"
+         ],
+         "obj": [
+            "database"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "connect"
+         ],
+         "obj": [
+            "database"
+         ]
+      }
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello I need help",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Good to see you",
+      "expected_class": "hi",
+      "result_class": "question",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "HI is anyone there?",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hello",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "I need help pleas",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Ok",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Dear sir",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hello",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "hi",
+      "expected_class": "hi",
+      "result_class": "hi",
+      "entities": {},
+      "normalized_entities": {}
+   },
+   {
+      "text": "Hi I am getting error in selecting org org owner not active",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "selecting"
+         ],
+         "obj": [
+            "org"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "select"
+         ],
+         "obj": [
+            "org"
+         ]
+      }
+   },
+   {
+      "text": "I get a Not authorized error when trying to create a free machine learning service instance",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "create"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "Hi Im running a coding in R and I get this error Error object x not found",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "tech": [
+            "r"
+         ]
+      },
+      "normalized_entities": {
+         "tech": [
+            "r"
+         ]
+      }
+   },
+   {
+      "text": "Hello where can I report an error while training models in Watson Machine Learning",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "training"
+         ],
+         "obj": [
+            "models"
+         ],
+         "tech": [
+            "watson machine learning"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "train"
+         ],
+         "obj": [
+            "model"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      }
+   },
+   {
+      "text": "Im having trouble loading in my data for some reason wont let me upload files",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "loading",
+            "upload"
+         ],
+         "obj": [
+            "files"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [],
+         "unknown": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "So this happens when I try to sign up.",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "sign up"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "sign up"
+         ]
+      }
+   },
+   {
+      "text": "I cant see the imported CSV files",
+      "expected_class": "problem",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "imported"
+         ],
+         "obj": [
+            "files"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "import"
+         ],
+         "obj": [],
+         "unknown": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "I am stuck creating an account",
+      "expected_class": "problem",
+      "result_class": "problem",
+      "entities": {
+         "action": [
+            "creating"
+         ],
+         "obj": [
+            "account"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "create"
+         ],
+         "obj": [
+            "account"
+         ]
+      }
+   },
+   {
+      "text": "good day, how can I add multiple files to a project at once?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "files",
+            "project"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "add"
+         ],
+         "obj": [
+            "project"
+         ],
+         "unknown": [
+            "files"
+         ]
+      }
+   },
+   {
+      "text": "Can you recover a notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "recover"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "recover"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "Hi How can I rename of a Notebook?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "rename"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "rename"
+         ],
+         "obj": [
+            "notebook"
+         ]
+      }
+   },
+   {
+      "text": "How can I upload a dataset to r studio",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "upload"
+         ],
+         "obj": [
+            "dataset"
+         ],
+         "tech": [
+            "r studio"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [
+            "dataset"
+         ],
+         "tech": [
+            "r"
+         ]
+      }
+   },
+   {
+      "text": "Hi can you tell me how to load a shape file?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [
+            "shape file"
+         ]
+      },
+      "normalized_entities": {
+         "action": [
+            "load"
+         ],
+         "obj": [
+            "shapefile"
+         ]
+      }
+   },
+   {
+      "text": "How can I use already-deployed models with WML?",
+      "expected_class": "question",
+      "result_class": "question",
+      "entities": {
+         "obj": [
+            "models"
+         ],
+         "tech": [
+            "wml"
+         ]
+      },
+      "normalized_entities": {
+         "obj": [
+            "model"
+         ],
+         "tech": [
+            "machine learning"
+         ]
+      }
+   }
+]
