@@ -162,8 +162,10 @@ Installing RStudio locally is easy, and there's a free version, so that really i
 
 # Disclaimer
 
-What's shown in these files is not the "best practice" or the recommended way to do things.  Instead, what's in these files is just a *fast* way to step through using these services and to see the value you can get (eg. the dashboard and the clusters.)  For example, there are MUCH better ways to normalize results for natural language understanding projects.. but the kludge here (file 12) requires no extra tools or effort.  :)
+The comments in the `sample-data` directory and the `custom-language-model/document-set` directory are not actual user comments collected from anywhere.  I made them up for this sample (but I tried to make them in the same *style* as typical user comments I've seen.)  Do not infer any real-world busness meaning about any company or products from the results in the dashboard or the clusters.
 
-This is meant to be fun and to perhaps inspire you to create solutions for processing your comments, questions, and chat convos.
+What's shown in these files is not the "best practice" or the recommended way to do things.  Instead, what's in these files is just a *fast* way to step through using these services and to see the value you can get (eg. the dashboard and the clusters.)  For example, there are MUCH better ways to normalize results for natural language understanding projects.. but the kludge here (file 12) requires no extra tools or effort.
+
+This is meant to be fun and to inspire you to create solutions for processing your comments, questions, and chat convos.  :)
 
 
