@@ -6,8 +6,8 @@ var g_nlu   = new g_nluV1( { username: '', // <- Get this from "Service credenti
                            } );
 
 var g_sample_comment = "";
-//g_sample_comment = "I am not able to register my account need your help"; // Sample of "problem" class
-g_sample_comment = "how do i save my data as a csv file?";                // Sample of "question" class
+g_sample_comment = "I am not able to register my account need your help"; // Sample of "problem" class
+//g_sample_comment = "how do i save my data as a csv file?";                // Sample of "question" class
 
 g_nlu.analyze( { 'text': g_sample_comment,
                  'language': 'en',

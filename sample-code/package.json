@@ -2,7 +2,7 @@
   "name": "cascon-2017-watson-analyze-comments",
   "version": "1.0.0",
   "description": "Collection of sample code demonstrating using Watson NLP to analyze comments",
-  "main": "create_train_classifier.js",
+  "main": "01_NLC-create_train_classifier.js",
   "dependencies": {
     "watson-developer-cloud": "^2.41.1"
   },
