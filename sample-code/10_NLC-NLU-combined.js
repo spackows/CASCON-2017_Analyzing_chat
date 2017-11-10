@@ -1,3 +1,6 @@
+// demo video: https://raw.githubusercontent.com/spackows/CASCON-2017_Analyzing_chat/master/demo-videos/call-10_NLC-and_NLU.mp4
+//
+
 // NLC
 var g_watson = require( 'watson-developer-cloud' );                 
 var g_nlc    = g_watson.natural_language_classifier( { url: '',      // Get this from "Service credentials" section of your Watson NLC service in IBM Cloud dashboard
