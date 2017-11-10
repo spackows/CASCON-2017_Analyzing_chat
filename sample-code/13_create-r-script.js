@@ -1,3 +1,5 @@
+// demo video: https://raw.githubusercontent.com/spackows/CASCON-2017_Analyzing_chat/master/demo-videos/call-13_cluster-normalized-entities.mp4
+//
 
 var g_readFiles = require( './helper_readFiles.js' );
 
