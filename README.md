@@ -13,7 +13,7 @@ If you have questions, feedback, or suggestions, I would love to hear from you!
 
 # Prerequisites
 
-See prerequisites [here](https://github.com/spackows/CASCON-2017_Analyzing_chat/blob/master/README-prerequisites.md)
+See prerequisites [here](https://github.com/spackows/CASCON-2017_Analyzing_chat/blob/master/README-prerequisites.md).
 
 **Note:** You don't have to meet any of these prerequisites to have fun... The directory `sample-output` contains all the output you would have generated if you ran the code yourself, including the html dashboard and clustering results in .pdf files.  :)
 
