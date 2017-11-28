@@ -18,6 +18,7 @@ g_readFiles.readJSONCommentsFile( g_file_name, function( read_error, comments )
         printDataFrameDefs( data_frame_cols );
         printDistanceFuncCall( data_frame_cols );
         printHClustCall( data_frame_cols );
+        printGroups( data_frame_cols );
         printDendrCall( data_frame_cols );
         printColouringCall( data_frame_cols );
         printPlot( data_frame_cols );
@@ -233,7 +234,15 @@ function printDataFrameDefs( data_frame_cols )
         Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
         {
             var base_keywords_arr = Object.keys( data_frame_cols[ group ][ entity_type ] );
-            console.log( 'col_' + group + '_' + entity_type + '_' + base_keywords_arr[0].replace( /[\s\-]+/g, '_' ) + ' = c( "' + data_frame_cols[ group ][ entity_type ][ base_keywords_arr[0] ].join( '", "' ) + '" )' );
+            var entities_str = 'col_' + group + '_' + entity_type + '_' + base_keywords_arr[0].replace( /[\s\-]+/g, '_' ) + ' = list( ';
+            for( var i = 0; i < data_frame_cols[ group ][ entity_type ][ base_keywords_arr[0] ].length; i++ )
+            {
+                entities_str += '"' + ( i + 1 ) + '"="' + data_frame_cols[ group ][ entity_type ][ base_keywords_arr[0] ][ i ] + '", ';
+            }
+            entities_str = entities_str.replace( /, $/, '' );
+            console.log( entities_str + ' )' );
+            
+            
             for( var i = 1; i < base_keywords_arr.length; i++ )
             {
                 var num_entries = data_frame_cols[ group ][ entity_type ][ base_keywords_arr[i] ].reduce( function( a, b ){ return a + b; }, 0 );
@@ -258,6 +267,7 @@ function printDataFrameDefs( data_frame_cols )
 function printDistanceFuncCall( data_frame_cols )
 {
     console.log( '' );
+    console.log( '' );
     console.log( '# Calc distance...' );
     console.log( '#' );
     
@@ -278,6 +288,7 @@ function printDistanceFuncCall( data_frame_cols )
 function printHClustCall( data_frame_cols )
 {
     console.log( '' );
+    console.log( '' );
     console.log( '# Hierarchical clusters...' );
     console.log( '#' );
 
@@ -286,13 +297,85 @@ function printHClustCall( data_frame_cols )
         Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
         {
             console.log( 'hc_' + group + '_' + entity_type + ' = hclust( d_' + group + '_' + entity_type + ' )' );
-            console.log( 'hc_' + group + '_' + entity_type + '$labels = col_' + group + '_' + entity_type + '_comment_entities' );
+            console.log( 'hc_' + group + '_' + entity_type + '$labels = names( col_' + group + '_' + entity_type + '_comment_entities )' );
 
         } );
         
         console.log( '' );
 
     } );
+}
+
+
+function printGroups( data_frame_cols )
+{
+    console.log( '' );
+    console.log( '' );
+    console.log( '# Cluster groups...' );
+    console.log( '#' );
+
+    Object.keys( data_frame_cols ).forEach( function( group )
+    {
+        Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
+        {
+            console.log( 'ct_'      + group + '_' + entity_type + ' = cutree( hc_' + group + '_' + entity_type + ', h=0.5 )' );
+
+        } );
+        
+        console.log( '' );
+
+    } );
+    
+    console.log( '' );
+    
+    Object.keys( data_frame_cols ).forEach( function( group )
+    {
+        Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
+        {
+            console.log( 'groups_'  + group + '_' + entity_type + ' = tapply( names( ct_' + group + '_' + entity_type + ' ), ct_' + group + '_' + entity_type + ', c )' );
+
+        } );
+        
+        console.log( '' );
+
+    } );
+    
+    console.log( '' );
+    
+    Object.keys( data_frame_cols ).forEach( function( group )
+    {
+        Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
+        {
+            console.log( 'sizes_'   + group + '_' + entity_type + ' = unlist( lapply( groups_'  + group + '_' + entity_type + ', length ) )' );
+
+        } );
+        
+        console.log( '' );
+
+    } );
+    
+    console.log( '' );
+    console.log( '' );
+    
+    console.log( '# Name each cluster group with the most common entity in the group ...' );
+    console.log( '#' );
+    console.log( 'individualEntities = function( entities ){ unlist( strsplit( entities, " | ", fixed=TRUE ) ) }' );
+    console.log( 'getGroupEntities   = function( group, entities_list ){ unlist( lapply( group, function( id ){ unlist( lapply( entities_list[[ id ]], individualEntities ) ) } ) ) }' );
+    console.log( 'topEntity          = function( group, entities_list ){ names( which.max( table( getGroupEntities( group, entities_list ) ) ) ) }' );
+    console.log( '' );
+    
+    Object.keys( data_frame_cols ).forEach( function( group )
+    {
+        Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
+        {
+            console.log( 'group_names_' + group + '_' + entity_type + ' = lapply( groups_' + group + '_' + entity_type + ', function( group ){ topEntity( group, col_' + group + '_' + entity_type + '_comment_entities ) } )' );
+        } );
+
+        console.log( '' );
+        
+    } );
+    
+    console.log( '' );
 }
 
 
@@ -319,16 +402,33 @@ function printDendrCall( data_frame_cols )
 function printColouringCall( data_frame_cols )
 {
     console.log( '' );
-    console.log( '# Colour the groups...' );
+    console.log( '' );
+    console.log( '# Colour the dendrograms...' );
     console.log( '#' );
-
-    printColourHelper();
+    
+    console.log( 'inGroup     = function( group, index ){ length( which( group == index ) ) > 0 }' );
+    console.log( 'whichGroup  = function( group_list, index ){ which( lapply( group_list, function( group ){ inGroup( group, index ) } ) == TRUE ) } ' );
+    console.log( 'colourDendr = function( dendr, group_list, colour_list, entities_list )' );
+    console.log( '{' );
+    console.log( '    dendr = dendrapply( dendr, function( node )' );
+    console.log( '    {' );
+    console.log( '        if( is.leaf( node ) )' );
+    console.log( '        {' );
+    console.log( '            a = attributes( node )' );
+    console.log( '            colour = colour_list[[ whichGroup( group_list, a$label ) ]]' );
+    console.log( '            attr( node, "nodePar" ) = c( a$nodePar, lab.col = colour, pch = NA_integer_ )' );
+    console.log( '            attributes( node )$label = entities_list[[a$label]]' );
+    console.log( '        }' );
+    console.log( '        node' );
+    console.log( '    } )' );
+    console.log( '}' );
+    console.log( '' );
     
     Object.keys( data_frame_cols ).forEach( function( group )
     {
         Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
         {
-            console.log( 'dendr_' + group + '_' + entity_type + ' = colour_helper$colourGroups( dendr_' + group + '_' + entity_type + ' )' );
+            console.log( 'colours_' + group + '_' + entity_type + ' = rainbow( length( groups_' + group + '_' + entity_type + ' ) )' );
 
         } );
         
@@ -336,89 +436,20 @@ function printColouringCall( data_frame_cols )
 
     } );
     
-}
+    console.log( '' );
+    
+    Object.keys( data_frame_cols ).forEach( function( group )
+    {
+        Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
+        {
+            console.log( 'dendr_' + group + '_' + entity_type + ' = colourDendr( dendr_' + group + '_' + entity_type + ', groups_' + group + '_' + entity_type + ', colours_' + group + '_' + entity_type + ', col_' + group + '_' + entity_type + '_comment_entities )' );
 
+        } );
 
-function printColourHelper()
-{
-    console.log( 'library(methods)' );
-    console.log( 'myColourHelper = setRefClass( "myColourHelper", fields = c( "colour_list", "colour_position", "beginnings", "beginnings_position" ), methods = list(' );
-    console.log( '' );
-    console.log( '    initialize = function()' );
-    console.log( '    {' );
-    console.log( '        colour_list <<- list( "darkviolet", "darkslategray", "blue", "brown4", "darkolivegreen", "cadetblue4", "deeppink4", "gold4", "cyan4", "tomato", "tan", "slategrey", "palevioletred4", "palegreen4", "saddlebrown" )' );
-    console.log( '        colour_position <<- 1' );
-    console.log( '        beginnings <<- list()' );
-    console.log( '        beginnings_position <<- 1' );
-    console.log( '    },' );
-    console.log( '' );
-    console.log( '    changeColours = function()' );
-    console.log( '    {' );
-    console.log( '        colour_position <<- colour_position + 1' );
-    console.log( '        if( colour_position > length(colour_list) )' );
-    console.log( '        {' );
-    console.log( '            colour_position <<- 1' );
-    console.log( '        }' );
-    console.log( '' );
-    console.log( '        beginnings_position <<- beginnings_position + 1' );
-    console.log( '        if( beginnings_position > length(beginnings) )' );
-    console.log( '        {' );
-    console.log( '            beginnings_position <<- 1' );
-    console.log( '        }' );
-    console.log( '    },' );
-    console.log( '' );
-    console.log( '    getColour = function( label )' );
-    console.log( '    {' );
-    console.log( '        if( label == beginnings[beginnings_position] )' );
-    console.log( '        {' );
-    console.log( '            changeColours()' );
-    console.log( '        }' );
-    console.log( '' );
-    console.log( '        colour_list[ colour_position ]' );
-    console.log( '    },' );
-    console.log( '' );
-    console.log( '    listBeginnings = function( node )' );
-    console.log( '    {' );
-    console.log( '        if( is.leaf( node[[1]] ) )' );
-    console.log( '        {' );
-    console.log( '            beginnings[[length(beginnings)+1]] <<- attributes( node[[1]] )$label' );
-    console.log( '        }' );
-    console.log( '        else' );
-    console.log( '        {' );
-    console.log( '            listBeginnings( node[[1]] )' );
-    console.log( '            listBeginnings( node[[2]] )' );
-    console.log( '        }' );
-    console.log( '    },' );
-    console.log( '' );
-    console.log( '    colourGroups = function( node )' );
-    console.log( '    {' );
-    console.log( '        initialize()' );
-    console.log( '        if( is.leaf( node[[1]] ) )' );
-    console.log( '        {' );
-    console.log( '            listBeginnings( node[[2]] )' );
-    console.log( '        }' );
-    console.log( '        else' );
-    console.log( '        {' );
-    console.log( '            listBeginnings( node )' );
-    console.log( '        }' );
-    console.log( '        node = dendrapply( node, function( node )' );
-    console.log( '        {' );
-    console.log( '            if( is.leaf( node ) )' );
-    console.log( '            {' );
-    console.log( '                a = attributes( node )' );
-    console.log( '                colour = getColour( a$label )' );
-    console.log( '                attr( node, "nodePar" ) = c( a$nodePar, lab.col = colour, pch = NA_integer_ )' );
-    console.log( '            }' );
-    console.log( '            node' );
-    console.log( '        } )' );
-    console.log( '' );
-    console.log( '        node' );
-    console.log( '    }' );
-    console.log( '' );
-    console.log( ') )' );
-    console.log( '' );
-    console.log( 'colour_helper = myColourHelper()' );
-    console.log( '' );
+        console.log( '' );
+        
+    } );
+    
 }
 
 
@@ -433,10 +464,18 @@ function printPlot( data_frame_cols )
     {
         Object.keys( data_frame_cols[ group ] ).forEach( function( entity_type )
         {
-            console.log( 'pdf( "' + group + '_' + entity_type + '_cluster.pdf" )' );
-            console.log( 'par( mar = c( 5, 2, 2, 12)+0.1 )' );
-            console.log( 'plot( dendr_' + group + '_' + entity_type + ', horiz=T )' );
-
+            console.log( 'svg( "' + group + '_' + entity_type + '_cluster.svg", height=5, width=10 )' );
+            console.log( 'par( mfrow = c( 1, 2 ) )' );
+            console.log( 'par( cex = 0.75 )' );
+            console.log( '' );
+            console.log( 'par( mar = c( 4, 2, 2, 18 ) + 0.1 )' );
+            console.log( 'plot( dendr_' + group + '_' + entity_type + ', horiz=T, cex.lab=0.75, main=NULL )' );
+            console.log( 'abline( v="0.5", col="red", lty=2 )' );
+            console.log( '' );
+            console.log( 'par( mar = c( 4, 0, 2, 4 ) + 0.1 )' );
+            console.log( 'barplot( rev( sizes_' + group + '_' + entity_type + ' ), names.arg = rev( group_names_' + group + '_' + entity_type + ' ), col = rev( colours_' + group + '_' + entity_type + ' ), horiz=TRUE, las=1 )' );
+            console.log( '' );
+            console.log( '' );
         } );
     
         console.log( '' );
